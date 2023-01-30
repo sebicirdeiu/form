@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+<div class="background">
+    <div class="logo">
+        <img src="/image/—Pngtree—palm tree with ocean wave_5323067.png" width="80px" height="auto" alt="logo">
+        <h1 class="lotxt">Live & Wander</h1>
+    </div>
+    <footer>© Sebastian Cirdeiu 2023</footer>
+</div>
+
+<div class="main">
+    <h2 class="header">Are you dreaming of traveling the world? Can you imagine yourself soaking the views of the most
+        beautiful beaches, mountains and waterfalls? What about the uniqueness of different cultures, traditions, food and
+        sights that that you could experience? 
+        <br>
+        <br>
+        <em>Come abourd!</em> </h2>
+
+
+    <form action="#" method="post">
+        <legend><strong>Let's do this!</strong></legend>
+        <p>Fields marked with an * must be completed before submition.</p>
+        <br>
+        
+
+                    
+                    <fieldset>
+                        <div>
+                            <label for="first">*First Name:</label>
+                            <input type="text" placeholder="Ex: Andrei"  name="first_name" id="first" pattern='[A-Z][a-z]*' required>
+                        </div>
+                    
+
+                    <div>
+                        <label for="last">*Last Name:</label>
+                        <input type="text" name="last_name" placeholder="Ex: Popescu" id="last" pattern='[A-Z][a-z]*' required>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        
+                        <div>
+                            <label for="email">*E-mail:</label>
+                            <input type="e-mail" name="email" placeholder="Ex: popescuandrei@gmail.com" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        </div>
+                        <div>
+                            <label for="celnum">*Phone Number:</label>
+                            <input type="tel" name="telephone" placeholder="07..." id="celnum" pattern="^[+]?[0-9]{10,12}$" required >
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        
+                        <div>
+                            <label for="password">*Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Xvak66!" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" required>
+                        </div>
+                        
+                        <div>
+                            <label for="confirmation">*Confirm Password:</label>
+                            <input type="password" name="passconfirm" id="confirmation" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$"  required>
+                        
+                        </div>
+                    </fieldset>
+                
+                <div class="button">
+                    
+                         <button type="submit">Create Account</button>
+                            
+                                <p>Alredy have an account? <a href="#">Log in</a></p>
+        </div>
+                
+    </form>
+</div>
+
+
+
+
+
+</body>
+</html>
